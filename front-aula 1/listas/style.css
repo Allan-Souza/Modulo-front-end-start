@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,110,1) 69%); 
+  color:white;
+  font-family: 'Righteous', cursive;
+  font-size: 100%;
+}
+
+a{
+    color:rgba(121,9,110,1);
+}
+
+img{
+  width:95px;
+  height:95px;
+}
+
+#pagina{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}

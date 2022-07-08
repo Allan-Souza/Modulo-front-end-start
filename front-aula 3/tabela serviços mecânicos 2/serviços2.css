@@ -1,0 +1,25 @@
+table{
+    border-style:groove;
+}
+
+th{
+    background: grey;
+}
+
+.time{
+    text-align: center;
+    width: 200px;
+}
+
+.custo{
+    text-align: right;
+    width: 150px;
+}
+
+#nacional{
+    background: rgb(0, 113, 128) ;
+}
+
+#titulo{
+    background: rgb(3, 252, 169);
+}

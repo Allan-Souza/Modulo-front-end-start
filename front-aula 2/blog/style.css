@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+#logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background: #f5f5f5;
+}
+
+main{
+    background: url("imgs/cblol-background.webp") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+#nav-itens{
+    list-style: none;
+    display: flex;
+}
+
+#nav-itens li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+#menu-mobile{
+    cursor: pointer;
+    display: none;
+}
+
+#menu-mobile div{
+    width: 32px;
+    height: 2px;
+    background: rgb(0, 0, 0.865);
+    margin: 8px;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    #nav-itens{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #f5f5f5;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    #nav-itens li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    #menu-mobile{
+        display: block;
+    }
+}
+
+#nav-itens.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  #menu-mobile.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  #menu-mobile.active .line2 {
+    opacity: 0;
+  }
+  
+  #menu-mobile.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+#rodape{
+    background: #f5f5f5;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    
+}
+
+main{
+    align-items: center;
+}
+
+#descricao{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#descricao p{
+    font-size: 90px;
+}
+
+#content {
+    text-align: center;
+    background-color: #f5f5f5;
+    color: black;
+    border-radius: 70px;
+    padding: 50px 0px;
+    margin: 0px 60px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px rgba(63, 62, 62, 0.788);
+}
+
+#content img{
+    border-radius: 50%;
+    box-shadow: 2px 2px rgba(63, 62, 62, 0.788);
+}
+
+#content a {
+    color: black;
+}

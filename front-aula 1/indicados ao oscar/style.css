@@ -1,0 +1,27 @@
+a{
+    text-decoration: none;
+}
+  
+img{
+    width: 180px;
+    height: 300px;
+}
+
+body{
+    background: rgb(4,0,83);
+    background: linear-gradient(90deg, rgba(4,0,83,1) 0%, rgba(0,0,0,1) 100%);
+    color: #e4fd02;
+}
+
+#lista-filmes{
+    text-align: center;
+}
+
+#lista-filmes a {
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+a:hover{
+    font-size: larger;
+}
